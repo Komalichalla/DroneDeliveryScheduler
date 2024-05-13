@@ -49,7 +49,7 @@ NPS <score>
 
 ### Algorithm 
 
-Certainly! Let's break down the algorithm used in the Drone Delivery Scheduler:
+Algorithm used in the Drone Delivery Scheduler:
 
 ### 1. Reading and Parsing Orders
 
