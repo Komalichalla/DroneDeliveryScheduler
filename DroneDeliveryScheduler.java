@@ -64,8 +64,12 @@ public class DroneDeliveryScheduler {
 
     public static void main(String[] args) throws IOException, ParseException {
 
+        if(args.length < 1){
+            System.out.println("Please provide an input file path");
+            return;
+        }
         List<Order> orders = new ArrayList<>();
-        BufferedReader br = new BufferedReader(new FileReader("input.txt"));
+        BufferedReader br = new BufferedReader(new FileReader(args[0]));
         String line;
         while ((line = br.readLine()) != null) {
             String[] parts = line.split(" ");
